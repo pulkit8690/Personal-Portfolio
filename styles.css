@@ -2,7 +2,7 @@ html,body{
     margin-right: 0 !important;
     margin-left: 0 !important;
     padding: 0;
-    color:  #212529;
+    /* color:  #212529; */
     
 }
 .navbar
@@ -43,7 +43,7 @@ html,body{
     font-size: 30px;
     line-height: 60px;
     transition: .3s;
-    color: #000;
+    /* color: #000; */
 }
 
 .social-menu ul li .fab:hover{
@@ -79,41 +79,17 @@ html,body{
     background-color: #0077b5;
 }
 
-/* .container {
-    position: relative;
-    text-align: center;
-    color: rgb(31, 14, 14);
-  }
-  .top-right1 {
-    position:absolute;
-    top: 82px;
-    right: 25px;
-    font-size: 20px;
-    padding-right: 500px;
-    display: flex;
-    
-  }
-  .top-right2 {
-    position:absolute;
-    top: 160px;
-    right: 25px;
-    font-size: 20px;
-    padding-right: 500px;
-    display: flex;
-    
-    
-  }
-  
-  .top-right3 {
-    position:absolute;
-    top: 358px;
-    right: 25px;
-    font-size: 20px;
-    padding-right: 500px;
-    display: flex;
-    
-  } */
-
+/* Zoom In #1 */
+.hover01 figure img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
 
 
 
@@ -226,7 +202,6 @@ html,body{
     object-fit: cover;
 }
 .download-cv-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    text-decoration: none;
+    color: inherit;
 }

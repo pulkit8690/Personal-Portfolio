@@ -205,3 +205,165 @@ html,body{
     text-decoration: none;
     color: inherit;
 }
+
+
+/* Navbar specific styling */
+.navbar {
+  font-family: Arial, sans-serif; /* Change to desired font for navbar */
+}
+
+/* Social links styling */
+.social-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social-links li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.social-links li a {
+  text-decoration: none;
+  display: block;
+  width: 210px;
+  height: 80px;
+  background: #fff;
+  text-align: left;
+  padding-left: 20px;
+  transform: rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: .5s;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+  position: relative;
+}
+
+.social-links li a .fa {
+  font-size: 40px;
+  color: #262626;
+  line-height: 80px;
+  transition: .5s;
+  padding-right: 14px;
+}
+
+.social-links li a span {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  color: #262626;
+  letter-spacing: 4px;
+  transition: .5s;
+}
+
+.social-links li a:before,
+.social-links li a:after {
+  content: '';
+  position: absolute;
+  background: #b1b1b1;
+  transform: .5s;
+}
+
+.social-links li a:before {
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  transform: rotate(0deg) skewY(-45deg);
+}
+
+.social-links li a:after {
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+.social-links li a:hover {
+  transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+}
+
+.social-links li:hover .fa,
+.social-links li:hover span {
+  color: #fff;
+}
+
+/* Specific styles for each social link */
+.social-facebook:hover a {
+  background: #3b5998;
+}
+
+.social-facebook:hover a:before {
+  background: #365492;
+}
+
+.social-facebook:hover a:after {
+  background: #4a69ad;
+}
+
+.social-twitter:hover a {
+  background: #00aced;
+}
+
+.social-twitter:hover a:before {
+  background: #097aa5;
+}
+
+.social-twitter:hover a:after {
+  background: #53b9e0;
+}
+
+.social-google-plus:hover a {
+  background: #dd4b39;
+}
+
+.social-google-plus:hover a:before {
+  background: #b33a2b;
+}
+
+.social-google-plus:hover a:after {
+  background: #e66a5a;
+}
+
+.social-instagram:hover a {
+  background: #e4405f;
+}
+
+.social-instagram:hover a:before {
+  background: #d81c3f;
+}
+
+.social-instagram:hover a:after {
+  background: #e46880;
+}
+.social-github:hover a {
+    background: #24292f; /* GitHub dark background color */
+  }
+
+  .social-github:hover a:before {
+    background: #6e7681; /* GitHub light gray color */
+  }
+
+  .social-github:hover a:after {
+    background: #c9d1d9; /* GitHub lighter gray color */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

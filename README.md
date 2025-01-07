@@ -64,7 +64,7 @@ To set up the project locally, follow these steps:
 ![Screenshot 7](Snapshots/7.png)
 
 ## Contact
-For any inquiries, please reach out via the contact form on the website or email me directly at [your-email@example.com](mailto:pulkitarora8690@gmail.com).
+For any inquiries, please reach out via the contact form on the website or email me directly at [pulkitarora8690@gmail.com](mailto:pulkitarora8690@gmail.com).
 
 ---
 

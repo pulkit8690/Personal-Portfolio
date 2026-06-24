@@ -30,7 +30,7 @@ export default function Nav() {
       }`}
     >
       <nav className="mx-auto max-w-7xl px-5 sm:px-8 h-16 sm:h-20 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2.5 group">
+        <a href="#top" className="flex items-center gap-2.5 group" aria-label="Pulkit Arora Portfolio Home">
           <span className="grid place-items-center h-9 w-9 rounded-xl bg-gradient-to-br from-azure to-navy shadow-lg shadow-azure/30">
             <Code2 className="h-5 w-5 text-white" />
           </span>

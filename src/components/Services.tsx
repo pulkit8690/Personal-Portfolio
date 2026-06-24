@@ -47,7 +47,7 @@ export default function Services() {
               <div className="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-white/10 blur-2xl" />
               <p className="relative font-display font-800 text-[22px] leading-tight">Have something specific in mind?</p>
               <div className="relative">
-                <p className="text-ice/90 text-[14.5px] mb-5">Let\u2019s scope it together and find the most cost-effective path.</p>
+                <p className="text-ice/90 text-[14.5px] mb-5">  Let's scope it together and find the most cost-effective path.</p>
                 <span className="inline-flex items-center gap-2 font-600">Start a conversation <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" /></span>
               </div>
             </a>

@@ -8,32 +8,32 @@ export const services = [
   {
     icon: Boxes,
     title: 'Custom Business Software',
-    desc: 'Transform manual workflows into reliable digital systems built around how your business actually operates.',
-    items: ['Business Management Systems', 'Internal Portals', 'Operations Software'],
+    desc: 'Transform manual workflows into reliable digital systems engineered specifically for your business operations.',
+    items: ['Management Systems', 'Internal Portals', 'Operational Software'],
   },
   {
     icon: Layers3,
-    title: 'ERP Development',
-    desc: 'Custom ERP systems tailored to manufacturing and business operations \u2014 no bloated off-the-shelf licensing.',
-    items: ['Customer Management', 'Production Tracking', 'Order Monitoring', 'Reporting Systems'],
+    title: 'ERP Software Development',
+    desc: 'Customized ERP solutions tailored to manufacturing and logistics — eliminating bloated licensing fees.',
+    items: ['Customer Management', 'Production Tracking', 'Order Monitoring', 'Advanced Reporting'],
   },
   {
     icon: Smartphone,
-    title: 'Mobile Application Development',
-    desc: 'Cross-platform Flutter applications for your team and your customers, built to perform.',
-    items: ['Android Apps', 'Business Apps', 'Internal Employee Applications'],
+    title: 'Flutter Mobile Development',
+    desc: 'High-performance cross-platform Flutter applications for your team and customers, delivered with precision.',
+    items: ['Android & iOS Apps', 'Business Mobility', 'Internal Employee Apps'],
   },
   {
     icon: Server,
-    title: 'Backend Development',
-    desc: 'Robust Spring Boot backends engineered for security, scale and clean integration.',
-    items: ['REST APIs', 'Authentication', 'Role Based Access', 'Database Design'],
+    title: 'Spring Boot Backend Development',
+    desc: 'Robust Java backend development services engineered for maximum security, scale, and seamless integration.',
+    items: ['REST API Development', 'Secure Authentication', 'Role-Based Access', 'Optimized Databases'],
   },
   {
     icon: Workflow,
-    title: 'Business Automation',
-    desc: 'Automate the repetitive work that drains your team\u2019s time and introduces costly errors.',
-    items: ['Reporting Automation', 'Approval Workflows', 'Data Management'],
+    title: 'AI Automation Services',
+    desc: 'Automate repetitive tasks with integrated AI solutions that save time and eliminate human error.',
+    items: ['Workflow Automation', 'Approval Systems', 'Data Management'],
   },
 ];
 
@@ -51,7 +51,7 @@ export const whyCards = [
   {
     icon: MessageSquare,
     title: 'Direct Communication',
-    desc: 'Work directly with the developer building your system \u2014 no account-manager telephone.',
+    desc: 'Work directly with the developer building your system — no account-manager telephone.'
   },
   {
     icon: Wallet,
@@ -61,12 +61,12 @@ export const whyCards = [
 ];
 
 export const industries = [
-  { icon: Factory, name: 'Manufacturing', desc: 'Production & shop-floor systems' },
-  { icon: Flame, name: 'Foundries', desc: 'Casting & melt-shop tracking' },
-  { icon: Building2, name: 'SMEs', desc: 'End-to-end operations software' },
-  { icon: Store, name: 'Local Businesses', desc: 'Digitize day-to-day workflows' },
-  { icon: Rocket, name: 'Startups', desc: 'MVPs & scalable platforms' },
-  { icon: Briefcase, name: 'Professional Services', desc: 'Client & workflow management' },
+  { icon: Factory, name: 'Manufacturing', desc: 'Production and shop-floor tracking systems' },
+  { icon: Flame, name: 'Foundries', desc: 'Precision casting and melt-shop operations' },
+  { icon: Building2, name: 'SMEs', desc: 'End-to-end operational software' },
+  { icon: Store, name: 'Local Businesses', desc: 'Digital transformation of daily workflows' },
+  { icon: Rocket, name: 'Startups', desc: 'Scalable MVPs and cross-platform platforms' },
+  { icon: Briefcase, name: 'Professional Services', desc: 'Client management and workflow automation' },
 ];
 
 export const techStack = [

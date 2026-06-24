@@ -2,6 +2,7 @@ import { Code2, Mail, Phone, Linkedin, Github } from 'lucide-react';
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  console.log('Current Year:', year); // Log the current year to the console
   return (
     <footer className="bg-ink-2 border-t border-white/10">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 py-14">
@@ -20,12 +21,12 @@ export default function Footer() {
           <div className="md:text-right">
             <div className="flex md:justify-end gap-3">
               {[
-                { icon: Mail, href: 'mailto:pulkitarora8690@gmail.com' },
-                { icon: Phone, href: 'tel:+918847412522' },
-                { icon: Linkedin, href: 'https://www.linkedin.com/in/pulkitt-arora/' },
-                { icon: Github, href: 'https://github.com/pulkit8690' },
+                { icon: Mail, href: 'mailto:pulkitarora8690@gmail.com', label: 'Email Pulkit Arora' },
+                { icon: Phone, href: 'tel:+918847412522', label: 'Call Pulkit Arora' },
+                { icon: Linkedin, href: 'https://www.linkedin.com/in/pulkitt-arora/', label: 'Connect on LinkedIn' },
+                { icon: Github, href: 'https://github.com/pulkit8690', label: 'Follow on GitHub' },
               ].map((s, i) => (
-                <a key={i} href={s.href} target={s.href.startsWith('http') ? '_blank' : undefined} rel="noreferrer" className="grid place-items-center h-10 w-10 rounded-xl border border-white/10 bg-white/5 text-slate-300 hover:text-white hover:bg-azure/20 hover:border-azure/40 transition-all">
+                <a key={i} href={s.href} target={s.href.startsWith('http') ? '_blank' : undefined} rel="noreferrer" aria-label={s.label} className="grid place-items-center h-10 w-10 rounded-xl border border-white/10 bg-white/5 text-slate-300 hover:text-white hover:bg-azure/20 hover:border-azure/40 transition-all">
                   <s.icon className="h-4.5 w-4.5" />
                 </a>
               ))}
@@ -40,7 +41,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-7 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-[13px] text-slate-500">
-          <p>\u00A9 {year} Pulkit Arora. All rights reserved.</p>
+          <p>© {year} Pulkit Arora. All rights reserved.</p>
           <p>Designed &amp; built for businesses that mean business.</p>
         </div>
       </div>

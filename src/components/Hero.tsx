@@ -49,9 +49,8 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.1, ease }}
             className="mt-7 font-display font-800 text-white leading-[1.05] tracking-tight text-[2.6rem] sm:text-[3.6rem] lg:text-[4.4rem]"
           >
-            Building Custom Business <br className="hidden sm:block" />
-            Software for{' '}
-            <span className="text-shimmer">Growing Companies</span>
+            Custom Spring Boot & <br className="hidden sm:block" />
+            Flutter <span className="text-shimmer">Software Developer</span>
           </motion.h1>
 
           <motion.p
@@ -60,8 +59,8 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.25, ease }}
             className="mt-7 max-w-2xl text-[17px] sm:text-[19px] leading-relaxed text-slate-300"
           >
-            I help businesses replace manual processes, spreadsheets and registers with
-            secure, scalable software solutions that improve efficiency and decision making.
+            I help businesses replace manual processes with secure, scalable custom software solutions.
+            Specializing in Java backend, mobile apps, and ERP systems for industries across Ludhiana and Punjab.
           </motion.p>
 
           <motion.div

@@ -25,20 +25,20 @@ export default function Contact() {
             <Reveal><SectionLabel>Contact</SectionLabel></Reveal>
             <Reveal delay={0.05}>
               <h2 className="mt-5 font-display font-800 text-white text-[2.2rem] sm:text-[3rem] leading-[1.08] tracking-tight">
-                Let\u2019s Build Something <span className="text-shimmer">Great Together</span>
+                Let's Build Something <span className="text-shimmer">Great Together</span>
               </h2>
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-6 text-[16px] sm:text-[17px] text-slate-300 leading-relaxed max-w-lg">
-                Tell me about your operations, the manual work slowing you down, or the system you\u2019ve been meaning to build. I\u2019ll help you map the most effective path forward.
+                Tell me about your operations, the manual work slowing you down, or the system you've been meaning to build. I'll help you map the most effective path forward.
               </p>
             </Reveal>
             <Reveal delay={0.15}>
               <div className="mt-9 flex flex-col sm:flex-row gap-4">
-                <a href="mailto:pulkitarora8690@gmail.com" className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-azure to-sky px-7 py-4 font-600 text-white shadow-xl shadow-azure/30 hover:-translate-y-0.5 transition-all">
+                <a href="mailto:pulkitarora8690@gmail.com" aria-label="Schedule a project discussion via email" className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-azure to-sky px-7 py-4 font-600 text-white shadow-xl shadow-azure/30 hover:-translate-y-0.5 transition-all">
                   <Calendar className="h-5 w-5" /> Schedule a Project Discussion
                 </a>
-                <a href="mailto:pulkitarora8690@gmail.com" className="group inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 backdrop-blur px-7 py-4 font-600 text-white hover:bg-white/10 hover:-translate-y-0.5 transition-all">
+                <a href="mailto:pulkitarora8690@gmail.com" aria-label="Get a free consultation via email" className="group inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 backdrop-blur px-7 py-4 font-600 text-white hover:bg-white/10 hover:-translate-y-0.5 transition-all">
                   Get a Free Consultation <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </a>
               </div>
@@ -53,6 +53,7 @@ export default function Contact() {
                   href={c.href}
                   target={c.href.startsWith('http') ? '_blank' : undefined}
                   rel="noreferrer"
+                  aria-label={c.label}
                   className="group rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur p-6 transition-all hover:bg-white/[0.08] hover:border-azure/40 hover:-translate-y-1"
                 >
                   <span className="grid place-items-center h-11 w-11 rounded-xl bg-gradient-to-br from-azure to-sky text-white p-2.5 shadow-lg shadow-azure/30">

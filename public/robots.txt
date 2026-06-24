@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pulkitarora.co.in/sitemap.xml

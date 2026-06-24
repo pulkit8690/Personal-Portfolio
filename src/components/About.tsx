@@ -20,19 +20,19 @@ export default function About() {
             <Reveal><SectionLabel>About</SectionLabel></Reveal>
             <Reveal delay={0.05}>
               <h2 className="mt-5 font-display font-800 text-navy text-[2rem] sm:text-[2.8rem] leading-[1.1] tracking-tight">
-                Software Solutions Built Around Your Business
+                Software Solutions Built for Your Business Scale
               </h2>
             </Reveal>
             <Reveal delay={0.1}>
               <div className="mt-7 space-y-5 text-[16px] sm:text-[17px] leading-relaxed text-slate-600">
                 <p>
-                  I am a Software Developer specializing in <strong className="text-slate-800">Spring Boot, Flutter, ERP systems, API development</strong> and business automation solutions.
+                  As a Software Developer specializing in <strong>Spring Boot, Java Backend, and Flutter</strong>, I bridge the gap between complex business requirements and high-performance digital solutions.
                 </p>
                 <p>
-                  With experience in backend engineering and modern software development, I help companies digitize operations, automate workflows and build systems tailored to their business processes.
+                  Based in Ludhiana, Punjab, I help local and global companies digitize operations through <strong>Custom ERP Software Development</strong>, API integrations, and robust automation services.
                 </p>
                 <p className="text-navy font-600">
-                  My focus is delivering practical business value rather than generic software.
+                  Every project is handled with a focus on long-term scalability and business-centric value.
                 </p>
               </div>
             </Reveal>

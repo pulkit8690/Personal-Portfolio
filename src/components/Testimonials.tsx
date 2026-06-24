@@ -16,7 +16,7 @@ export default function Testimonials() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 text-[16px] text-slate-600 leading-relaxed">
-              Genuine reviews from real engagements will appear here \u2014 no fabricated logos or fake praise.
+              Client case studies and validated reviews will be published as project cycles conclude.
             </p>
           </Reveal>
         </div>

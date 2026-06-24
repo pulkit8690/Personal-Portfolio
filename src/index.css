@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #060c1c;
+  --color-ink-2: #0a1430;
+  --color-navy: #0b1f4d;
+  --color-navy-light: #15347a;
+  --color-azure: #2563eb;
+  --color-azure-bright: #3b82f6;
+  --color-sky: #60a5fa;
+  --color-ice: #dbeafe;
+  --color-mist: #f4f7fc;
+  --color-paper: #ffffff;
+  --color-slate-ink: #1e293b;
+  --color-muted: #64748b;
+
+  --font-display: 'Sora', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #ffffff;
+  color: var(--color-slate-ink);
+}
+
+::selection {
+  background: var(--color-azure);
+  color: #fff;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 11px;
+}
+::-webkit-scrollbar-track {
+  background: #eef2fa;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2563eb, #0b1f4d);
+  border-radius: 999px;
+  border: 2px solid #eef2fa;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Animated gradient mesh */
+@keyframes float-slow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -20px) scale(1.08); }
+}
+@keyframes float-slower {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-25px, 25px) scale(1.05); }
+}
+.animate-float-slow { animation: float-slow 14s ease-in-out infinite; }
+.animate-float-slower { animation: float-slower 18s ease-in-out infinite; }
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.text-shimmer {
+  background: linear-gradient(110deg, #60a5fa 20%, #ffffff 40%, #60a5fa 60%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+@keyframes grid-pan {
+  0% { background-position: 0 0; }
+  100% { background-position: 60px 60px; }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}

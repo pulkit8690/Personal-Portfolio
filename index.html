@@ -1,257 +1,275 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pulkit Arora</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pulkit Arora — freelance software developer building custom business software, ERP systems, Flutter apps and Spring Boot backends for manufacturing companies, foundries, SMEs and startups." />
+    <meta name="keywords" content="custom business software, ERP development, Spring Boot developer, Flutter developer, business automation, freelance software developer, manufacturing software" />
+    <meta name="author" content="Pulkit Arora" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pulkit Arora — Custom Business Software Development" />
+    <meta property="og:description" content="Replace manual processes and spreadsheets with secure, scalable software. ERP systems, mobile apps, backend development and business automation." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Pulkit Arora | Custom Business Software & ERP Development</title>
+    <script data-arena-recording="true">(function(){
+"use strict";
+var SK="__arena_rec",RRWEB_CDN="https://cdn.jsdelivr.net/npm/rrweb@2.0.0-alpha.4/dist/rrweb.min.js";
+var MAX_RECORDING_MS=600000,MAX_RRWEB_EVENTS=30000,MAX_INTERACTIONS=5000,MAX_CURSOR_POINTS=10000,recStopped=false;
+var stored=null;try{var raw=sessionStorage.getItem(SK);if(raw)stored=JSON.parse(raw);}catch(ex){}
+var meta=stored?stored.m||null:null,rrwebEvents=stored?stored.r||[]:[],rrwebStarted=false,startTime=stored?stored.st||Date.now():Date.now();
+var interactions=stored?stored.i||[]:[],cursorPath=stored?stored.c||[]:[],lastCursorSample=0,lastScrollSample=0;
+var pageHeight=document.documentElement.scrollHeight;
+var viewport={width:window.innerWidth,height:window.innerHeight};
+function isCapped(){if(recStopped)return true;if(Date.now()-startTime>=MAX_RECORDING_MS){recStopped=true;return true;}return false;}
+function persist(){try{var d=JSON.stringify({r:rrwebEvents,i:interactions,c:cursorPath,m:meta,st:startTime});sessionStorage.setItem(SK,d);}catch(ex){rrwebEvents=rrwebEvents.slice(Math.floor(rrwebEvents.length/2));try{sessionStorage.setItem(SK,JSON.stringify({r:rrwebEvents,i:interactions,c:cursorPath,m:meta,st:startTime}));}catch(ex2){}}}
+setInterval(persist,5000);
+window.addEventListener("resize",function(){viewport={width:window.innerWidth,height:window.innerHeight};pageHeight=document.documentElement.scrollHeight;});
+document.addEventListener("click",function(e){if(isCapped()||interactions.length>=MAX_INTERACTIONS)return;var el=e.target;var tag=el.tagName?el.tagName.toLowerCase():"";var text=(el.textContent||"").trim().substring(0,80);var classes=el.className&&typeof el.className==="string"?el.className.substring(0,120):"";interactions.push({type:"click",t:Date.now()-startTime,x:Math.round(e.clientX),y:Math.round(e.clientY),element:{tag:tag,text:text,classes:classes}});},true);
+window.addEventListener("scroll",function(){if(isCapped()||interactions.length>=MAX_INTERACTIONS)return;var now=Date.now();if(now-lastScrollSample<200)return;lastScrollSample=now;var scrollY=Math.round(window.scrollY||window.pageYOffset||0);var depthPct=pageHeight>viewport.height?Math.min(100,Math.round(((scrollY+viewport.height)/pageHeight)*100)):100;interactions.push({type:"scroll",t:now-startTime,y:scrollY,depth_pct:depthPct});},{passive:true});
+document.addEventListener("mousemove",function(e){if(isCapped()||cursorPath.length>=MAX_CURSOR_POINTS)return;var now=Date.now();if(now-lastCursorSample<250)return;lastCursorSample=now;cursorPath.push([Math.round(e.clientX),Math.round(e.clientY),now-startTime]);},{passive:true});
+document.addEventListener("keydown",function(e){if(isCapped()||interactions.length>=MAX_INTERACTIONS)return;if(e.target&&(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA"))return;interactions.push({type:"keydown",t:Date.now()-startTime,key:e.key});},true);
+function buildAnalytics(){if(!meta)return null;var ph=document.documentElement.scrollHeight;var maxScroll=0,clickElements={},firstClick=null,firstScroll=null,totalDistance=0;for(var i=0;i<interactions.length;i++){var ev=interactions[i];if(ev.type==="scroll"){if(ev.depth_pct>maxScroll)maxScroll=ev.depth_pct;if(!firstScroll)firstScroll=ev.t;}if(ev.type==="click"){if(!firstClick)firstClick=ev.t;var key=ev.element.tag+":"+ev.element.text.substring(0,30);clickElements[key]=true;}}for(var j=1;j<cursorPath.length;j++){var dx=cursorPath[j][0]-cursorPath[j-1][0];var dy=cursorPath[j][1]-cursorPath[j-1][1];totalDistance+=Math.sqrt(dx*dx+dy*dy);}var duration=Date.now()-startTime;var clickHeatmap=[];for(var k=0;k<interactions.length;k++){if(interactions[k].type==="click")clickHeatmap.push([interactions[k].x,interactions[k].y]);}return{generation_id:meta.generationId,tournament_id:meta.tournamentId,started_at:new Date(startTime).toISOString(),ended_at:new Date().toISOString(),duration_ms:duration,viewport:viewport,page_height:ph,interactions:interactions,cursor_path:cursorPath,click_heatmap:clickHeatmap,summary:{total_clicks:clickHeatmap.length,total_scrolls:interactions.filter(function(e){return e.type==="scroll";}).length,max_scroll_depth_pct:maxScroll,unique_elements_clicked:Object.keys(clickElements).length,time_to_first_click_ms:firstClick,time_to_first_scroll_ms:firstScroll,cursor_distance_px:Math.round(totalDistance),active_time_ms:duration}};}
+function loadRrweb(){if(rrwebStarted)return;rrwebStarted=true;var s=document.createElement("script");s.src=RRWEB_CDN;s.onload=function(){var rec=(window.rrweb&&window.rrweb.record)||window.rrwebRecord;if(!rec)return;rec({emit:function(event){if(rrwebEvents.length>=MAX_RRWEB_EVENTS||isCapped())return;rrwebEvents.push(event);}});};s.onerror=function(){};document.head.appendChild(s);}
+window.addEventListener("message",function(e){if(!e.data||typeof e.data.type!=="string")return;if(e.data.type==="arena:init"){if(!meta)startTime=Date.now();meta={generationId:e.data.generationId||e.data.modelId,tournamentId:e.data.tournamentId};persist();loadRrweb();if(e.source)e.source.postMessage({type:"arena:init-ack",generationId:meta.generationId},"*");}if(e.data.type==="arena:flush"){var resp={type:"arena:recording-data",generationId:meta?meta.generationId:null,rrwebEvents:rrwebEvents,analytics:buildAnalytics()};try{sessionStorage.removeItem(SK);}catch(ex){}if(e.source)e.source.postMessage(resp,"*");}});
+loadRrweb();
+})();</script>
+  <script data-arena-views="true">(function(){var isTop=false;try{isTop=window.self===window.top;}catch(e){}if(!isTop)return;window.__ARENA_META={generationId:"claude-opus-4-8",tournamentId:"1c0f1b15-e589-4345-b238-12660527d203"};var payload={tournamentId:"1c0f1b15-e589-4345-b238-12660527d203",modelId:"claude-opus-4-8"};try{var r=document.referrer;if(r){var u=new URL(r);payload.referrerDomain=u.hostname;}}catch(e){}try{var vid=null;try{vid=localStorage.getItem('arena_vid');}catch(e){}if(!vid){vid=typeof crypto!=="undefined"&&crypto.randomUUID?crypto.randomUUID():(Date.now().toString(36)+Math.random().toString(36).slice(2)).slice(0,32);try{localStorage.setItem('arena_vid',vid);}catch(e){}}if(vid)payload.viewerId=vid;}catch(e){}try{fetch("https://www.designarena.ai/api/agon/page-views",{"method":"POST","headers":{"Content-Type":"application/json"},"body":JSON.stringify(payload),"keepalive":true});}catch(e){}})();</script>
 </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+      <script data-element-picker>/**
+ * Agon Element Picker — injected into the preview iframe.
+ *
+ * Listens for postMessage from the parent to toggle inspect mode.
+ * In inspect mode, hovering highlights elements and clicking sends
+ * the element's source location (from data-source-loc) back to the parent.
+ *
+ * Protocol:
+ *   Parent -> iframe:  { type: 'inspect:mode', enabled: true/false }
+ *   iframe -> Parent:  { type: 'element:selected', file, line, column, tag, text, classes, id }
+ */
+(function () {
+  'use strict';
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Pulkit Arora</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/coding.html">Coding Profiles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact me</a>
-            </li>
-          </ul>
-          <a class="btn btn-info download-cv-button"
-            href="https://drive.google.com/file/d/1QfOLbyj1XK3d2t8bwrybeSa9qYeXfYRX/view?usp=sharing" download>Download
-            CV</a>
-        </div>
-      </div>
-    </nav>
-  </header>
+  var inspectEnabled = false;
+  var overlay = null;
+  var label = null;
+  var currentTarget = null;
 
-  <div class="min-vh-100 d-flex flex-column justify-content-center align-items-center bg-dark text-white">
-    <img src="profile-pic (3).png" alt="" class="myimg rounded-circle img-thumbnail">
-    <h2 class="c1">Hi, I'm</h2>
-    <h1 class="c2">Pulkit Arora</h1>
-    <h3 class="c3">An Enthusiastic Coder and Developer</h3>
-    <div class="social-menu">
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a href="https://github.com/pulkit8690" target="_blank" rel="noopener noreferrer"><i
-              class="fab fa-github"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.instagram.com/pulkitt.arora/" target="_blank" rel="noopener noreferrer"><i
-              class="fab fa-instagram"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.linkedin.com/in/pulkit-arora-731b17227/" target="_blank" rel="noopener noreferrer"><i
-              class="fab fa-linkedin-in"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://twitter.com/impulkit86" target="_blank" rel="noopener noreferrer"><i
-              class="fab fa-twitter fa-lg"></i></a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  function createOverlay() {
+    if (overlay) return;
 
-  <div class="bg-dark text-white py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-3">
-          <img src="left.png" alt="Left Image" class="img-fluid rounded-circle">
-        </div>
-        <div class="col-lg-6 text-center">
-          <div class="px-4 py-5 my-5">
-            <h1 class="fw-bold" style="color: white;">Who I Am?</h1>
-            <p class="lead mb-4 text-white">Hello! My name is Pulkit, and I am delighted to welcome you to my website.
-              Here, I would like to provide you with an insight into who I am and what I bring to the table.</p>
-            <p class="lead mb-4 text-white">Through this website, I aim to share my journey, accomplishments, and the
-              knowledge I have gained along the way. I believe in hard work and self-belief, and I strive to make a
-              positive impact in society.</p>
-            <p class="lead mb-4 text-white">I invite you to explore the various sections of my website to discover more
-              about my background, skills, projects, and aspirations. Whether you're a potential client, collaborator,
-              or someone who shares similar interests, I hope you find value in the content I have curated for you.</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <img src="2.png" alt="Right Image" class="img-fluid rounded-circle">
-        </div>
-      </div>
-    </div>
-  </div>
+    overlay = document.createElement('div');
+    overlay.id = '__picker-overlay';
+    overlay.style.cssText = [
+      'position: fixed',
+      'pointer-events: none',
+      'z-index: 2147483647',
+      'border: 2px solid #3b82f6',
+      'background: rgba(59, 130, 246, 0.08)',
+      'transition: all 0.05s ease-out',
+      'display: none',
+      'box-sizing: border-box',
+    ].join(';');
 
-  <div class="bg-dark text-white">
-    <div class="bg-dark text-white align-items-center text-center py-5">
-      <div class="col">
-        <h1 class="fw-bold">My Education</h1>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-4 mb-4 bg-dark text-white">
-          <div
-            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-info">
-            <div class="col p-4 d-flex flex-column position-static">
-              <h3 class="mb-0">Computer Engineering</h3>
-              <div class="mb-1 text-body-secondary">Nov 12</div>
-              <p class="card-text mb-auto">TIET, Patiala</p>
-              <p class="my-2 card-text mb-auto">2021-Present</p>
-            </div>
+    label = document.createElement('div');
+    label.id = '__picker-label';
+    label.style.cssText = [
+      'position: fixed',
+      'pointer-events: none',
+      'z-index: 2147483647',
+      'background: #1e40af',
+      'color: #fff',
+      'font: 11px/1.4 monospace',
+      'padding: 2px 6px',
+      'border-radius: 3px',
+      'white-space: nowrap',
+      'display: none',
+      'max-width: 400px',
+      'overflow: hidden',
+      'text-overflow: ellipsis',
+    ].join(';');
 
-            <div class="col-md-6 d-flex align-items-center">
-              <img src="4.png" alt="Image Description" class="img-fluid">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div
-            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-info">
-            <div class="col p-4 d-flex flex-column position-static">
-              <h3 class="mb-0">12<sup>th</sup> PCM </h3>
-              <div class="mb-1 text-body-secondary">Nov 12</div>
-              <p class="card-text mb-auto">MGPS, Doraha</p>
-              <p class="my-2 card-text mb-auto">2019-2021</p>
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-              <img src="8.png" alt="Image Description" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    document.body.appendChild(overlay);
+    document.body.appendChild(label);
+  }
 
-  <div class="album py-5 bg-dark">
-    <div class="bg-dark text-white align-items-center text-center py-5">
-      <div class="col">
-        <h1 class="fw-bold">Projects</h1>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row mx-auto d-flex justify-content-center">
-        <div class="col-md-3">
-          <div class="card bg-dark text-white border-info" style="width: 18rem;">
-            <div class="hover01">
-              <figure>
-                <img src="10.png" class="card-img-top" alt="..." height="280">
-              </figure>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Library Management System</h5>
-              <p class="card-text">Java And MySql</p>
-              <a href="https://github.com/pulkit8690/Library-Management-System" class="btn btn-success">Project Link</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card bg-dark text-white border-info" style="width: 18rem;">
-            <div class="hover01">
-              <figure>
-                <img src="11.png" class="card-img-top" alt="..." height="280">
-              </figure>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Sudoku Solver using Backtracking</h5>
-              <p class="card-text">Python and Flask</p>
-              <a href="https://github.com/pulkit8690/Sudoku-Solver" class="btn btn-success">Project Link</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card bg-dark text-white border-info" style="width: 18rem;">
-            <div class="hover01">
-              <figure>
-                <img src="12.png" class="card-img-top" alt="..." height="280">
-              </figure>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Topsis Package and Webapp</h5>
-              <p class="card-text">Python and Streamlit</p>
-              <a href="https://github.com/pulkit8690/Topsis-Streamlit" class="btn btn-success">Project Link</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card bg-dark text-white border-info" style="width: 18rem;">
-            <div class="hover01">
-              <figure>
-                <img src="13.png" class="card-img-top" alt="..." height="280">
-              </figure>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Mashup Songs Webapplication</h5>
-              <p class="card-text">Python and Flask</p>
-              <a href="https://github.com/pulkit8690/mashup-app-using-flask" class="btn btn-success">Project Link</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  function removeOverlay() {
+    if (overlay) { overlay.remove(); overlay = null; }
+    if (label) { label.remove(); label = null; }
+  }
 
-  <div class="py-5 bg-dark">
-    <hr>
-    <h1 align="center">
-        <a href="https://readme-typing-svg.herokuapp.com/demo/">
-            <img src="https://readme-typing-svg.herokuapp.com?font=Luxi+Mono&color=%237BF700&size=29&center=true&vCenter=true&multiline=true&width=900&height=100&lines=%F0%9F%94%A5+Languages+%26+Frameworks+%26+Tools+%26+Abilities+%F0%9F%94%A5">
-        </a>
-    </h1>
-    <p align="center">
-        <code><img title="Java" height="80" src="images/java-original.svg"></code>
-        <code><img title="Python" height="80" src="images/python-original.svg"></code>
-        <code><img title="My Sql" height="80" src="images/mysql.svg"></code>
-        <code><img title="Problem Solving" height="80" src="images/problemSolving.png"></code>
-        <code><img title="HTML5" height="80" src="images/html5.svg"></code>
-        <code><img title="CSS" height="80" src="images/css.svg"></code>
-        <code><img title="VS Code" height="80" src="images/vscode.png"></code>
-        <code><img title="Git" height="80" src="images/git-original.svg"></code>
-        <code><img title="GitHub" height="80" src="images/github.svg"></code>
-    </p>
-</div>
+  function findSourceAttr(el) {
+    while (el && el !== document.body && el !== document.documentElement) {
+      var src = el.getAttribute('data-source-loc');
+      if (src) return { element: el, source: src };
+      el = el.parentElement;
+    }
+    return null;
+  }
 
-<div class="bg-dark text-white">
-  <h2 class="text-center">Random Dev Quote</h2>
-  <div class="text-center">
-      <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="GitHub Quote" class="img-fluid">
-  </div>
-  <div class="text-center ">
-      <a href="https://github.com/pulkit8690">
-          <img src="https://user-images.githubusercontent.com/19292210/199123129-b9c2437d-4e6d-4f1c-a7ea-d9a91babb41d.gif" alt="GitHub Profile" class="img-fluid ">
-      </a>
-  </div>
-</div>
+  function parseSource(sourceStr) {
+    // Format: "relative/path.tsx:line:col"
+    var parts = sourceStr.split(':');
+    if (parts.length < 3) return { file: sourceStr, line: 0, column: 0 };
+    var col = parseInt(parts.pop(), 10);
+    var line = parseInt(parts.pop(), 10);
+    var file = parts.join(':'); // rejoin in case path has colons (unlikely but safe)
+    return { file: file, line: line, column: col };
+  }
 
-<footer class="bg-dark text-white">
-  <ul class="nav justify-content-center border-bottom  mb-1">
-      <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-white">Home</a></li>
-      <li class="nav-item"><a href="/projects.html" class="nav-link px-2 text-white">Projects</a></li>
-      <li class="nav-item"><a href="/coding.html" class="nav-link px-2 text-white">Coding Profile</a></li>
-      <li class="nav-item"><a href="/contact.html" class="nav-link px-2 text-white">Contact Me</a></li>
-  </ul>
-  <p class="text-center text-white mb-0">© 2024 Pulkit Arora</p>
-</footer>
+  function highlightElement(el) {
+    if (!overlay || !el) return;
 
+    var rect = el.getBoundingClientRect();
+    overlay.style.top = rect.top + 'px';
+    overlay.style.left = rect.left + 'px';
+    overlay.style.width = rect.width + 'px';
+    overlay.style.height = rect.height + 'px';
+    overlay.style.display = 'block';
 
+    var tag = el.tagName.toLowerCase();
+    var src = el.getAttribute('data-source-loc');
+    var labelText = '<' + tag + '>';
+    if (src) {
+      var parsed = parseSource(src);
+      labelText += '  ' + parsed.file + ':' + parsed.line;
+    }
+    label.textContent = labelText;
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-7Kt0qoOyV7DZIAyCLO0IFf6EZRVEnoetO4weMHat0a7YrqGSLippeahUYR5+xK7m"
-    crossorigin="anonymous"></script>
-</body>
+    // Position label above the element, or below if too close to top
+    var labelTop = rect.top - 22;
+    if (labelTop < 4) labelTop = rect.bottom + 4;
+    label.style.top = labelTop + 'px';
+    label.style.left = Math.max(4, rect.left) + 'px';
+    label.style.display = 'block';
+  }
 
+  function hideOverlay() {
+    if (overlay) overlay.style.display = 'none';
+    if (label) label.style.display = 'none';
+    currentTarget = null;
+  }
+
+  function onMouseOver(e) {
+    if (!inspectEnabled) return;
+    var target = e.target;
+
+    // Skip our own overlay elements
+    if (target === overlay || target === label) return;
+    if (target.id === '__picker-overlay' || target.id === '__picker-label') return;
+
+    var found = findSourceAttr(target);
+    if (found) {
+      currentTarget = found.element;
+      highlightElement(found.element);
+    } else {
+      currentTarget = target;
+      highlightElement(target);
+    }
+  }
+
+  function onMouseOut(e) {
+    if (!inspectEnabled) return;
+    var related = e.relatedTarget;
+    if (related === overlay || related === label) return;
+    if (!e.relatedTarget || e.relatedTarget === document) {
+      hideOverlay();
+    }
+  }
+
+  function onClick(e) {
+    if (!inspectEnabled) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+
+    var target = e.target;
+    if (target === overlay || target === label) return;
+
+    var found = findSourceAttr(target);
+    var element = found ? found.element : target;
+    var sourceStr = found ? found.source : null;
+
+    var info = {
+      type: 'element:selected',
+      tag: element.tagName.toLowerCase(),
+      text: (element.textContent || '').trim().substring(0, 200),
+      classes: element.className && typeof element.className === 'string'
+        ? element.className.substring(0, 300) : '',
+      id: element.id || '',
+      file: null,
+      line: null,
+      column: null,
+    };
+
+    if (sourceStr) {
+      var parsed = parseSource(sourceStr);
+      info.file = parsed.file;
+      info.line = parsed.line;
+      info.column = parsed.column;
+    }
+
+    // Send to parent
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage(info, '*');
+    }
+    // Also log locally for standalone testing
+    console.log('[element-picker] Selected:', info);
+  }
+
+  function enableInspect() {
+    if (inspectEnabled) return;
+    inspectEnabled = true;
+    createOverlay();
+    document.addEventListener('mouseover', onMouseOver, true);
+    document.addEventListener('mouseout', onMouseOut, true);
+    document.addEventListener('click', onClick, true);
+    document.body.style.cursor = 'crosshair';
+    console.log('[element-picker] Inspect mode ON');
+  }
+
+  function disableInspect() {
+    if (!inspectEnabled) return;
+    inspectEnabled = false;
+    document.removeEventListener('mouseover', onMouseOver, true);
+    document.removeEventListener('mouseout', onMouseOut, true);
+    document.removeEventListener('click', onClick, true);
+    hideOverlay();
+    removeOverlay();
+    document.body.style.cursor = '';
+    console.log('[element-picker] Inspect mode OFF');
+  }
+
+  // Listen for commands from parent
+  window.addEventListener('message', function (e) {
+    if (!e.data || typeof e.data.type !== 'string') return;
+
+    if (e.data.type === 'inspect:mode') {
+      if (e.data.enabled) {
+        enableInspect();
+      } else {
+        disableInspect();
+      }
+    }
+  });
+
+  // Also support toggling via keyboard (Alt+Shift+I) for standalone testing
+  document.addEventListener('keydown', function (e) {
+    if (e.altKey && e.shiftKey && e.key === 'I') {
+      if (inspectEnabled) {
+        disableInspect();
+      } else {
+        enableInspect();
+      }
+    }
+  });
+
+  console.log('[element-picker] Loaded. Waiting for inspect-mode command (or press Alt+Shift+I).');
+})();
+</script>
+  </body>
 </html>
